@@ -1,0 +1,5 @@
+Takeaways:
+
+1. Etherium Virtual Machine (EVM) is a decentralized virtual machine that can run crypto economically secured bits of code called smart contracts.
+2. Smart Contracts are written in Solidity language as it is tailored to the etherium blockchain since it comiles down to bytecode specific for Etherium's stack machine.
+3. Solidity is Turing Complete i.e. it can run any kind of task, theoretically.
