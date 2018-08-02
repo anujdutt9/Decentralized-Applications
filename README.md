@@ -27,3 +27,7 @@ https://iancoleman.io/bip39/
 ```
 https://faucet.rinkeby.io/
 ```
+
+```
+http://rinkeby-faucet.com
+```
