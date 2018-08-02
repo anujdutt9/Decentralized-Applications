@@ -1,0 +1,9 @@
+Dervied Address for New Metamask Account using the 12 Word Mnemonic Phrase:
+
+1. Go to:  
+
+	https://iancoleman.io/bip39/
+
+2. Enter 12 word phrase.
+
+3. It returns all the Derived Addresses that each account will take in succession along with it's Public and Private Keys.
