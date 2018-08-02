@@ -1,0 +1,2 @@
+To Redeploy the First Contract, Just delete the First Contract Instance from the Deployed Contracts, update the code and re-deploy it.
+Here, we want to redeploy the code because the "getMessage()" function does the same work as the function solidity creates at the background for the public string variable "message".
