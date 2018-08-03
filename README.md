@@ -40,4 +40,4 @@ http://rinkeby-faucet.com
 |   2.  | First Contract | | Completed |
 |   3.  | Redeploying Contract | | Completed |
 |   4.  | **Project-1: Simple Auction** | | Completed |
-|   5.  | **Project-2: Custom Node Design** | | Completed |
+|   5.  | **Project-2: Custom Node Design** | | Ongoing |
