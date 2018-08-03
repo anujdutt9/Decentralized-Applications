@@ -1,6 +1,6 @@
 # Custom Node Design
 
-# Project Directory Layout Description
+## Project Directory Layout Description
 
 **1. Contracts Directory:** Contains all the Solidity Contract code files ex. Inbox.sol.
 
