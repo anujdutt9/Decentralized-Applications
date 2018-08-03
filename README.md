@@ -31,3 +31,13 @@ https://faucet.rinkeby.io/
 ```
 http://rinkeby-faucet.com
 ```
+
+# Code List
+
+| S.No. |               Project/File Name               |                       Aim                       |   Status    |
+| ----- | --------------------------------------------- | ----------------------------------------------- | ----------- |
+|   1.  | Counter | | Completed |
+|   2.  | First Contract | | Completed |
+|   3.  | Redeploying Contract | | Completed |
+|   4.  | **Project-1: Simple Auction** | | Completed |
+|   5.  | **Project-2: Custom Node Design** | | Completed |
