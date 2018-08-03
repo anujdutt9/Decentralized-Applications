@@ -32,6 +32,12 @@ npm install --save solc
 npm install --save mocha ganache-cli web3@1.0.0-beta.26
 ```
 
+**3. Wallet Provider**
+
+```
+npm install --save truffle-hdwallet-provider
+```
+
 # Test Plan
 
 <img src="testing_setup_plan.png" alt="" width="50%">
@@ -53,6 +59,7 @@ node compile.js
 
 **Logging the Solidity Contract "Inbox.sol" Compilation returns the following:**
 
+```
 { contracts:
    { ':Inbox':
       { assembly: [Object],
@@ -69,7 +76,257 @@ node compile.js
    [ ':20:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.\n    function Inbox(string initialMessage) public {\r\n    ^ (Relevant source part starts here and spans across multiple lines).\n' ],
   sourceList: [ '' ],
   sources: { '': { AST: [Object] } } }
-
+```
 
 ***Here, it shows the contracts folder and the solidity contracts that it has compiled. In our case that contract is "Inbox.sol".
 The compilation returns a "bytecode" that will be deployed onto the blockchain and "interface" for Javascript which is our "ABI layer".***
+
+
+**2. Run the "Inbox.test.js" file as:**
+
+```
+node run test
+```
+
+This compiles the Solidity Contract and runs a test for it using MOCHA framework. The output for this is as follows:
+
+```
+Inbox
+(node:30444) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 data listeners added. Use emitter.setMaxListeners() to increase limit
+[ '0x74C1d64EF0Ce7b870842e9b9da7fa2aed16c0F62',
+  '0x07b4F1Eb15D2cd8f0115413b9E2Aa4A750B10aC0',
+  '0xb49F8EeaD4Bd60d98c4e823127922D114f660660',
+  '0x56259CAd6F08e5B06C57791c44C9ef15Ef4379E8',
+  '0x9D8A1462aDa7D9e12Fb668D678D1D75091e3FfF1',
+  '0x3E0C1fbF8a66e533aBf8f33063B62634f19E6888',
+  '0x9aaD2bfcf5277262D25FADC3326F3E93e4871199',
+  '0xdcd72CF5ad2A42F9A7ca53Ad7052bbb6277D9d3C',
+  '0x1B9Da1c44E17cFD24f837634aCB643858F9D7D2C',
+  '0x0E9824Bd384dcE6bDc5D91A7c3b89E45155508B1' ]
+Contract {
+  currentProvider: [Getter/Setter],
+  _requestManager:
+   RequestManager {
+     provider:
+      l {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        options: [Object],
+        engine: [Object],
+        manager: [Object],
+        sendAsync: [Function: bound ],
+        send: [Function: bound ],
+        close: [Function: bound ],
+        _queueRequest: [Function: bound ],
+        _processRequestQueue: [Function: bound ],
+        _requestQueue: [],
+        _requestInProgress: false },
+     providers:
+      { WebsocketProvider: [Function: WebsocketProvider],
+        HttpProvider: [Function: HttpProvider],
+        IpcProvider: [Function: IpcProvider] },
+     subscriptions: {} },
+  givenProvider: null,
+  providers:
+   { WebsocketProvider: [Function: WebsocketProvider],
+     HttpProvider: [Function: HttpProvider],
+     IpcProvider: [Function: IpcProvider] },
+  _provider:
+   l {
+     domain: null,
+     _events: { data: [Array] },
+     _eventsCount: 1,
+     _maxListeners: undefined,
+     options:
+      { vmErrorsOnRPCResponse: true,
+        verbose: false,
+        asyncRequestProcessing: false,
+        logger: [Object],
+        seed: 'CIglZSHWpW',
+        mnemonic: 'host citizen jaguar pluck hotel flee vote vendor foam fossil miracle split',
+        network_id: 1533318192566,
+        total_accounts: 10,
+        gasPrice: '0x4A817C800',
+        default_balance_ether: 100,
+        unlocked_accounts: [],
+        hdPath: 'm/44\'/60\'/0\'/0/',
+        gasLimit: '0x6691b7',
+        defaultTransactionGasLimit: '0x15f90',
+        time: null,
+        debug: false,
+        allowUnlimitedContractSize: false },
+     engine:
+      s {
+        domain: null,
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: 100,
+        _blockTracker: [Object],
+        _ready: [Object],
+        currentBlock: [Object],
+        _providers: [Array],
+        manager: [Object] },
+     manager:
+      s {
+        state: [Object],
+        options: [Object],
+        initialized: true,
+        initialization_error: null,
+        post_initialization_callbacks: [],
+        engine: [Object],
+        currentBlock: [Object] },
+     sendAsync: [Function: bound ],
+     send: [Function: bound ],
+     close: [Function: bound ],
+     _queueRequest: [Function: bound ],
+     _processRequestQueue: [Function: bound ],
+     _requestQueue: [],
+     _requestInProgress: false },
+  setProvider: [Function],
+  BatchRequest: [Function: bound Batch],
+  extend:
+   { [Function: ex]
+     formatters:
+      { inputDefaultBlockNumberFormatter: [Function: inputDefaultBlockNumberFormatter],
+        inputBlockNumberFormatter: [Function: inputBlockNumberFormatter],
+        inputCallFormatter: [Function: inputCallFormatter],
+        inputTransactionFormatter: [Function: inputTransactionFormatter],
+        inputAddressFormatter: [Function: inputAddressFormatter],
+        inputPostFormatter: [Function: inputPostFormatter],
+        inputLogFormatter: [Function: inputLogFormatter],
+        inputSignFormatter: [Function: inputSignFormatter],
+        outputBigNumberFormatter: [Function: outputBigNumberFormatter],
+        outputTransactionFormatter: [Function: outputTransactionFormatter],
+        outputTransactionReceiptFormatter: [Function: outputTransactionReceiptFormatter],
+        outputBlockFormatter: [Function: outputBlockFormatter],
+        outputLogFormatter: [Function: outputLogFormatter],
+        outputPostFormatter: [Function: outputPostFormatter],
+        outputSyncingFormatter: [Function: outputSyncingFormatter] },
+     utils:
+      { _fireError: [Function: _fireError],
+        _jsonInterfaceMethodToString: [Function: _jsonInterfaceMethodToString],
+        randomHex: [Function: randomHex],
+        _: [Object],
+        BN: [Object],
+        isBN: [Function: isBN],
+        isBigNumber: [Function: isBigNumber],
+        isHex: [Function: isHex],
+        isHexStrict: [Function: isHexStrict],
+        sha3: [Object],
+        keccak256: [Object],
+        soliditySha3: [Function: soliditySha3],
+        isAddress: [Function: isAddress],
+        checkAddressChecksum: [Function: checkAddressChecksum],
+        toChecksumAddress: [Function: toChecksumAddress],
+        toHex: [Function: toHex],
+        toBN: [Function: toBN],
+        bytesToHex: [Function: bytesToHex],
+        hexToBytes: [Function: hexToBytes],
+        hexToNumberString: [Function: hexToNumberString],
+        hexToNumber: [Function: hexToNumber],
+        toDecimal: [Function: hexToNumber],
+        numberToHex: [Function: numberToHex],
+        fromDecimal: [Function: numberToHex],
+        hexToUtf8: [Function: hexToUtf8],
+        hexToString: [Function: hexToUtf8],
+        toUtf8: [Function: hexToUtf8],
+        utf8ToHex: [Function: utf8ToHex],
+        stringToHex: [Function: utf8ToHex],
+        fromUtf8: [Function: utf8ToHex],
+        hexToAscii: [Function: hexToAscii],
+        toAscii: [Function: hexToAscii],
+        asciiToHex: [Function: asciiToHex],
+        fromAscii: [Function: asciiToHex],
+        unitMap: [Object],
+        toWei: [Function: toWei],
+        fromWei: [Function: fromWei],
+        padLeft: [Function: leftPad],
+        leftPad: [Function: leftPad],
+        padRight: [Function: rightPad],
+        rightPad: [Function: rightPad],
+        toTwosComplement: [Function: toTwosComplement] },
+     Method: [Function: Method] },
+  clearSubscriptions: [Function],
+  options:
+   { address: [Getter/Setter],
+     jsonInterface: [Getter/Setter],
+     data: undefined,
+     from: undefined,
+     gasPrice: undefined,
+     gas: undefined },
+  defaultAccount: [Getter/Setter],
+  defaultBlock: [Getter/Setter],
+  methods:
+   { setMessage: [Function: bound _createTxObject],
+     '0x368b8772': [Function: bound _createTxObject],
+     'setMessage(string)': [Function: bound _createTxObject],
+     message: [Function: bound _createTxObject],
+     '0xe21f37ce': [Function: bound _createTxObject],
+     'message()': [Function: bound _createTxObject] },
+  events: { allEvents: [Function: bound ] },
+  _address: '0xA9D4d17704bE9F8734a078eC582458A0A5A0e374',
+  _jsonInterface:
+   [ { constant: false,
+       inputs: [Array],
+       name: 'setMessage',
+       outputs: [],
+       payable: false,
+       stateMutability: 'nonpayable',
+       type: 'function',
+       signature: '0x368b8772' },
+     { constant: true,
+       inputs: [],
+       name: 'message',
+       outputs: [Array],
+       payable: false,
+       stateMutability: 'view',
+       type: 'function',
+       signature: '0xe21f37ce' },
+     { inputs: [Array],
+       payable: false,
+       stateMutability: 'nonpayable',
+       type: 'constructor',
+       constant: undefined,
+       signature: 'constructor' } ] }
+    v deploys a contract
+
+
+  1 passing (312ms)
+```
+
+## MOCHA Framework working Structure
+
+**1.** Start -> bootup -> Inbox.test.js execution automatically
+
+**2.** [beforeEach]  Deploy a new contract to local test network Gnashe
+
+**3.** ["it"]  Manipulate contract, maybe send a new message
+
+**4.** ["it"]  Make an assertion about the contract. (Assertion always in "it" block)
+
+**5.** [Repeat "beforeEach"]  Deploy a new contract and repeat from step-2
+
+***A contract is created through a transaction. Ganache automatically sets up unlocked [No public/private keys required] test accounts to test our contract locally.***
+
+## Infura API
+
+To deploy this test script and contract to a Rinkeby Network, we need some ether. Also, we need access to at-least one node from the Rinkeby network to deploy our contract. To do this, we use "Infura API" that has it's nodes on the Rinkeby network on the backend.
+
+Here, we use a custom provider as compared to the one already provided as in case with Ganache. The provider is unlocked to be used with the Web3 application using the 12 Word Account Mnemonic that is provided by Metamask.
+
+To signup for Infura, go to:
+
+```
+infura.io
+```
+
+and get your credentials:
+
+```
+Infura API Key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Rinkeby Endpoint: https://rinkeby.infura.io/v3/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+
