@@ -26,11 +26,11 @@ npm install --save solc
 npm install --save mocha ganache-cli web3@1.0.0-beta.26
 ```
 
-**1.** We'll be using the Solidity compiler to compile the Solidity contract and get the Bytecode and the ABI from that.
+**a.** We'll be using the Solidity compiler to compile the Solidity contract and get the Bytecode and the ABI from that.
 
-**2.** Then we deploy our Bytecode on a "Local Test Network" using "Ganache/TestRPC".
+**b.** Then we deploy our Bytecode on a "Local Test Network" using "Ganache/TestRPC".
 
-**3.** On other side, take the ABI and feed it into "Web3 library" which is a library that we use to get access to a deployed contract programatically on a Network.
+**c.** On other side, take the ABI and feed it into "Web3 library" which is a library that we use to get access to a deployed contract programatically on a Network.
 
 
 # Usage: 
