@@ -1,0 +1,8 @@
+Custom Boilerplate Project:
+
+We might need to use Version control.
+We might need our own application to run Solidity contract on blockchain.
+Write some solidity code that can be accessed from Javascript code.
+Automated testing of solidity contract on blockchain.
+We need Solidity compiler to compile the solidity code in Javascript backend to give us two things:
+ABI and ByteCode
