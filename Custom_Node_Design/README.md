@@ -2,6 +2,8 @@
 
 ## Project Directory Layout Description
 
+<img src="directory_layout.png" alt="" width="30%">
+
 **1. Contracts Directory:** Contains all the Solidity Contract code files ex. Inbox.sol.
 
 **2. test:** Contains the Javascript files to automatically test the Solidity Contract instead of testing it using Remix.
@@ -25,6 +27,10 @@ npm install --save solc
 ```
 npm install --save mocha ganache-cli web3@1.0.0-beta.26
 ```
+
+# Test Plan
+
+<img src="testing_setup_plan.png" alt="" width="30%">
 
 **a.** We'll be using the Solidity compiler to compile the Solidity contract and get the Bytecode and the ABI from that.
 
