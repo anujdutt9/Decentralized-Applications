@@ -1,8 +1,12 @@
 # Custom Node Design
 
+***This repository contains the code that is aimed at solving the issues as shown in the table below. We'll be creating a custom javascript project that will be able to compile the Solidity contracts, deploy them on a test network and interact with that without using Remix or any other IDE. The project also includes the scripts to automatically test the Solidity contract and validate them instead of putting the values one by one on Remix to test the contract out.***
+
+<img src="custom_node_design_outline.png" alt="" width="90%">
+
 ## Project Directory Layout Description
 
-<img src="directory_layout.png" alt="" width="30%">
+<img src="directory_layout.png" alt="" width="50%">
 
 **1. Contracts Directory:** Contains all the Solidity Contract code files ex. Inbox.sol.
 
@@ -30,7 +34,7 @@ npm install --save mocha ganache-cli web3@1.0.0-beta.26
 
 # Test Plan
 
-<img src="testing_setup_plan.png" alt="" width="30%">
+<img src="testing_setup_plan.png" alt="" width="50%">
 
 **a.** We'll be using the Solidity compiler to compile the Solidity contract and get the Bytecode and the ABI from that.
 
