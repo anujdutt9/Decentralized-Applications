@@ -5,8 +5,8 @@ const {interface, bytecode} = require('./compile');
 
 // Setup HD Wallet Provider
 const provider = new HDWalletProvider(
-  'blush earth garbage license amateur history frost build laugh stuff repair parade',
-  'https://rinkeby.infura.io/v3/6c36b3165d7c4387a8f2618642b0788a '
+  '12 word phrase from metamask',
+  'https://rinkeby.infura.io/v3/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 );
 
 const web3 = new Web3(provider);
