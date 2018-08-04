@@ -333,4 +333,4 @@ Rinkeby Endpoint: https://rinkeby.infura.io/v3/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ## Deployment of Solidity Contract on Rinkeby Test Network
 
-<img src="deployment_on_rinkeby_network.png" alt="" width="50%">
+<img src="deployment_on_rinkeby_network.png" alt="" width="70%">
