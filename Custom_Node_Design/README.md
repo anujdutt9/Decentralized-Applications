@@ -312,6 +312,10 @@ Contract {
 
 ***A contract is created through a transaction. Ganache automatically sets up unlocked [No public/private keys required] test accounts to test our contract locally.***
 
+## Deployment of Solidity Contract on Rinkeby Test Network
+
+<img src="deployment_on_rinkeby_network.png" alt="" width="70%">
+
 ## Infura API
 
 To deploy this test script and contract to a Rinkeby Network, we need some ether. Also, we need access to at-least one node from the Rinkeby network to deploy our contract. To do this, we use "Infura API" that has it's nodes on the Rinkeby network on the backend.
@@ -330,7 +334,3 @@ and get your credentials:
 Infura API Key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 Rinkeby Endpoint: https://rinkeby.infura.io/v3/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
-
-## Deployment of Solidity Contract on Rinkeby Test Network
-
-<img src="deployment_on_rinkeby_network.png" alt="" width="70%">
