@@ -298,6 +298,8 @@ Contract {
 
 ## MOCHA Framework working Structure
 
+<img src="Mocha_Functions.png" alt="" width="50%">
+
 **1.** Start -> bootup -> Inbox.test.js execution automatically
 
 **2.** [beforeEach]  Deploy a new contract to local test network Gnashe
