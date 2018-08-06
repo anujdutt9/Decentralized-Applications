@@ -343,6 +343,8 @@ Rinkeby Endpoint: https://rinkeby.infura.io/v3/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 node deploy.js
 ```
 
+<img src="Notes/deploy_js_output.png" alt="" width="90%">
+
 This file automatically compiles the Solidity Contract code in the file "Inbox.sol" and deploys it using Web3 and HDWalletProvider.
 
 **2.** To test that the contract is online, copy the code from the file "Inbox.sol" and paste into the Remix Editor online.
@@ -351,14 +353,26 @@ This file automatically compiles the Solidity Contract code in the file "Inbox.s
 
 **4.** Next, get the address at which your contract is deployed from "deploy.js" execution and paste that into "At Address" field in Remix Editor.
 
+<img src="Notes/at_address.png" alt="" width="100%">
+
 **5.** Click on "message" to view the initial message that we have set in the script.
+
+<img src="Notes/initial_message.png" alt="" width="100%">
 
 **6.** Now, enter a new message in front of "setMessage" and click on "set Message". This will start a new transaction on the blockchain, process it and change the message to the new text that you provide.
 
 **7.** To see that how the process goes on behind the scenes, copy the contract deployed address and go to "Etherscan.io". Paste your address on top and click on "Go". Doing this will show you the current state of contract, how it's being processed, the message being processed in bytecode format etc.
 
+<img src="Notes/new_message.png" alt="" width="50%">
+
+<img src="Notes/etherscan_txn.png" alt="" width="100%">
+
 **8.** Once the processing ends and "Etherscan" shows "Success" for your contract that means the contract has been processed. Now, go back to Remix Editor and see for the logs. You will see a debug message that tells you the information about whats the status of your deployed contract, how much gas it used, address of who processed it etc.
 
+<img src="Notes/txn_approved.png" alt="" width="100%">
+
 **9.** Now if you again click on "message" on the right you will see that the text changes to the one you provided in the "set Message" field. That's it. 
+
+<img src="Notes/new_message_set.png" alt="" width="100%">
 
 **NOTE: Clicking on "message" does not cause any transaction as it is a local process. Executing "set Message" causes a transaction and requires some "Gas" in form of ether to process the request on the network.**
