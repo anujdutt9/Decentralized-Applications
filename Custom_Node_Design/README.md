@@ -361,4 +361,4 @@ This file automatically compiles the Solidity Contract code in the file "Inbox.s
 
 **9.** Now if you again click on "message" on the right you will see that the text changes to the one you provided in the "set Message" field. That's it. 
 
-**NOTE: Clicking on "message" does not cause any transaction as it is a local process. Executing "set Message" causes a transaction and requires som "Gas" in form of ether to process the request on the network.**
+**NOTE: Clicking on "message" does not cause any transaction as it is a local process. Executing "set Message" causes a transaction and requires some "Gas" in form of ether to process the request on the network.**
