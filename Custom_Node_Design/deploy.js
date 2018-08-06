@@ -1,14 +1,18 @@
 // The code in this file is used to deploy the contract to Test Etherium Network
+// Connect to some target Network and Unlock account for use
 const HDWalletProvider = require('truffle-hdwallet-provider');
 const Web3 = require('web3');
 const {interface, bytecode} = require('./compile');
 
 // Setup HD Wallet Provider
+// Unlock a Network for test using 12 Word Menemonic
+// Provider should conenct to an Infura Node (rinkeby)
 const provider = new HDWalletProvider(
   '12 word phrase from metamask',
   'https://rinkeby.infura.io/v3/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 );
 
+// Feed provider to Web3 Instance
 const web3 = new Web3(provider);
 
 const INITIAL_STRING = 'Hello World !!'
