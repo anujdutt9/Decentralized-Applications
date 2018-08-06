@@ -40,4 +40,4 @@ http://rinkeby-faucet.com
 |   2.  | First Contract | Simple Solidity Contract to set a Message Variable and getting it's value using Remix IDE. | Completed |
 |   3.  | Redeploying Contract | Solidity contract to make changes and re-deploy contract in a pre-deployed project. | Completed |
 |   4.  | **Project-1: Simple Auction** | Simple auction app to bid using Etherium coins. | Completed |
-|   5.  | **Project-2: Custom Node Design** | Custom Node in Blockchain using Solidity, Javascript and HTML. | Completed |
+|   5.  | **Project-2: Custom Node Design** | Deploying Custom Contract Node in Blockchain using Solidity and Javascript. | Completed |
