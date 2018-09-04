@@ -42,3 +42,5 @@ http://rinkeby-faucet.com
 |   4.  | **Project-1: Simple Auction** | Simple auction app to bid using Etherium coins. | Completed |
 |   5.  | **Project-2: Custom Node Design** | Deploying Custom Contract Node in Blockchain using Solidity and Javascript. | Completed |
 |   6.  | **Project-3: DAPP-Game** | Rock Paper Scissors Game using Solidity Smart Contract on test blockchain network. | Ongoing |
+|   7.  | **Project-4: Blockchain-Swift** | Simple blockchain implementation in Swift for MacOS. | Completed. |
+|   8.  | **Project-5: Blockchain-Web-API** | Blockchain application with access to Web API using Vapor framework. | Completed |
